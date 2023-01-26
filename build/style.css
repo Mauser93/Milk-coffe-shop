@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("fonts/Gilroy-Regular.eot");
+  src: url("fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy-Regular.woff") format("woff"), url("fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("fonts/Gilroy-Bold.eot");
+  src: url("fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy-Bold.woff") format("woff"), url("fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("fonts/Gilroy-Light.eot");
+  src: url("fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy-Light.woff") format("woff"), url("fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: url(/img/body_zaliv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gilroy Regular";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 100px;
+  color: #000000;
+}
+
+span {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 62px;
+  color: #000000;
+}
+
+.header {
+  overflow: hidden;
+}
+
+.header__header {
+  margin-bottom: 60px;
+  padding: 25px 0 0px;
+}
+
+.header__logo img {
+  width: 70%;
+}
+
+.burger {
+  width: 55px;
+  height: 55px;
+  font-size: 45px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: background 0.7s ease;
+  transition: background 0.7s ease;
+  cursor: pointer;
+}
+.burger:hover {
+  background-color: #F9B300;
+}
+
+.header__icon a {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.header__icon a:hover {
+  color: #F9B300;
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+  background-color: #000;
+}
+
+.contacts__items a {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contacts__items a:hover {
+  color: #F9B300;
+  -webkit-transform: scale(0.95) rotateZ(-2deg);
+          transform: scale(0.95) rotateZ(-2deg);
+  border-radius: 10px;
+}
+
+.header__img img {
+  width: 120%;
+  -webkit-transform: translateY(-170px) translateX(70px);
+          transform: translateY(-170px) translateX(70px);
+}
+@media screen and (min-width: 768px) {
+  .header__img img {
+    -webkit-transform: translateY(-200px) translateX(160px);
+            transform: translateY(-200px) translateX(160px);
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header__img img {
+    -webkit-transform: translateY(-145px) translateX(-40px);
+            transform: translateY(-145px) translateX(-40px);
+    width: 100%;
+  }
+}
+
+.button__header button {
+  border: none;
+  background-color: #F9B300;
+  color: #fff;
+  width: 400px;
+  height: 65px;
+  border-radius: 10px;
+  font-size: 20px;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+.button__header button:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#F09819), color-stop(51%, #F9B300), to(#F09819));
+  background-image: linear-gradient(to right, #F09819 0%, #F9B300 51%, #F09819 100%);
+  color: #000;
+}
+
+.header__content {
+  padding-top: 30px;
+}
+
+.header__text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  color: #000;
+}
+@media screen and (min-width: 768px) {
+  .header__text {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header__text {
+    font-size: 22px;
+  }
+}
+
+.catalog {
+  margin-bottom: 40px;
+}
+
+.catalog__items {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  .catalog__items {
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+}
+.catalog__items::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 80%;
+  bottom: -450px;
+  left: -120px;
+  background-image: url(/img/zerna-coffe.svg);
+  background-repeat: no-repeat;
+}
+
+.catalog__item {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 25px 0 0;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+@media screen and (max-width: 768px) {
+  .catalog__item:nth-child(2), .catalog__item:nth-child(3), .catalog__item:nth-child(4) {
+    display: none;
+  }
+}
+.catalog__item:hover img {
+  -webkit-transform: translateY(-30px) scale(0.9);
+          transform: translateY(-30px) scale(0.9);
+}
+.catalog__item:hover span {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+.catalog__item:hover .trade, .catalog__item:hover .other {
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+.catalog__item .other, .catalog__item .trade {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  width: 232px;
+  height: 50px;
+  margin: 5px 0;
+  font-size: 14px;
+  background-color: #F9B300;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.catalog__item .other:hover, .catalog__item .trade:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#F09819), color-stop(51%, #F9B300), to(#F09819));
+  background-image: linear-gradient(to right, #F09819 0%, #F9B300 51%, #F09819 100%);
+  color: #000;
+  -webkit-box-shadow: 1px 1px 19px rgba(124, 4, 4, 0.5);
+          box-shadow: 1px 1px 19px rgba(124, 4, 4, 0.5);
+}
+.catalog__item .trade {
+  -webkit-transform: translateX(400px);
+          transform: translateX(400px);
+}
+.catalog__item .other {
+  -webkit-transform: translateX(-400px);
+          transform: translateX(-400px);
+}
+.catalog__item span {
+  font-size: 15px;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  display: block;
+}
+.catalog__item img {
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  width: 100%;
+}
+
+.top {
+  background-color: #fff;
+}
+.top a {
+  color: #000;
+  text-decoration: none;
+}
+.top .top__header {
+  padding: 18px 0;
+}
+@media screen and (min-width: 992px) {
+  .top {
+    background-color: transparent;
+  }
+}

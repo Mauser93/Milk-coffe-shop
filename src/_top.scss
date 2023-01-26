@@ -1,0 +1,13 @@
+.top {
+    background-color: $color_white;
+    a {
+        color: $color_black;
+        text-decoration: none;
+    }
+    .top__header{
+        padding: 18px 0;
+    }
+    @include media(992px){
+        background-color: transparent;
+    }
+}

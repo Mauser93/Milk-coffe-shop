@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+
+
+body {
+    background-image: url(/img/body_zaliv.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font: {
+        family: 'Gilroy Regular';
+        size: 22px;
+        weight:400;
+    }
+    line-height: 1.5em;
+    letter-spacing: .5px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 100px;
+    color: #000000;
+}
+
+span {
+    font-weight: 700;
+}
+p {
+    font-weight: 400;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 62px;
+    color: #000000;
+}

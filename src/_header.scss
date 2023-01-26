@@ -1,0 +1,109 @@
+.header{
+    overflow: hidden;
+}
+.header__header {
+    margin-bottom: 60px;
+    padding: 25px 0 0px;
+}
+.header__logo{
+    img {
+        width: 70%;
+    }
+}
+.burger {
+    width: 55px;
+    height: 55px;
+    font-size: 45px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    transition: background .7s ease;
+    cursor: pointer;
+        &:hover {
+            background-color: $color_yellow;
+        }
+    
+}
+
+.header__icon {
+    a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 50%;
+        transition: all .5s ease;
+        &:hover {
+            color: $color_yellow;
+            transform: scale(1.35);
+            background-color: $color_black;
+        }
+    }
+}
+
+.contacts__items {
+     a {
+        transition: all .5s ease;
+        &:hover {
+            color: $color_yellow;
+            transform: scale(0.95) rotateZ(-2deg);
+            border-radius: 10px;
+        }
+     }
+}
+
+.header__img{
+    img {
+        width: 120%;
+        transform: translateY(-170px) translateX(70px);
+    }
+    @include media(768px){
+        img {
+            transform: translateY(-200px) translateX(160px);
+            width: 80%;
+        }
+    }
+    @include media(992px){
+        img {
+            transform: translateY(-145px) translateX(-40px);
+            width: 100%;
+        }
+    }
+}
+
+.button__header {
+    button {
+        border: none;
+        background-color: $color_yellow;
+        color: $color_white;
+        width: 400px;
+        height: 65px;
+        border-radius: 10px;
+        font-size: 20px;
+        transition: all .6s linear;
+        &:hover{
+            background-image: linear-gradient(to right, #F09819 0%, $color_yellow 51%, #F09819 100%);
+            color: #000;
+        }
+    }
+}
+
+.header__content {
+    padding-top: 30px;
+}
+
+.header__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 130%;
+    color: $color_black;
+    @include media(768px){
+        font-size: 19px;
+    }
+    @include media(992px){
+        font-size: 22px;
+    }
+}
+
+
+
+
