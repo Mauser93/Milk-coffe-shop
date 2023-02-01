@@ -1,10 +1,10 @@
 .header{
     overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+    
 }
-.header__header {
-    margin-bottom: 60px;
-    padding: 25px 0 0px;
-}
+
 .header__logo{
     img {
         width: 70%;
@@ -71,6 +71,9 @@
 }
 
 .button__header {
+    &:nth-child(1){
+        margin-top: 180px;
+    }
     button {
         border: none;
         background-color: $color_yellow;
@@ -88,19 +91,57 @@
 }
 
 .header__content {
+    // position: relative;
     padding-top: 30px;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(/img/coffe_header.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        width: 500px;
+        height: 370px;
+        top: 119px;
+        right: -145px;
+        @include media(768px){
+            top: 188px;
+            background-size: 540px;
+            right: -10px
+        }
+        @include media(992px){
+            top: 10px;
+            background-size: 550px;
+            right: 20px;
+        }
+        @include media(1200px){
+            top: -22px;
+            width: 625px;
+            right: 60px;
+            height: 460px;
+            background-size: 580px;
+        }
+        
+}
+    
 }
 
 .header__text {
+    p:first-child{
+        margin-bottom: 27px;
+    }
+    .button__header{
+        margin-top: 90px;
+    }
     font-weight: 500;
     font-size: 15px;
     line-height: 130%;
     color: $color_black;
     @include media(768px){
-        font-size: 19px;
+        font-size: 17px;
     }
     @include media(992px){
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 

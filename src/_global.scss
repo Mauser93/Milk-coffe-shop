@@ -3,24 +3,30 @@
 
 
 body {
+   
     background-image: url(/img/body_zaliv.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center top;
+    background-size: auto;
+    // overflow: hidden;
     
     font: {
         family: 'Gilroy Regular';
         size: 22px;
         weight:400;
     }
-    line-height: 1.5em;
+    line-height: 1.2em;
     letter-spacing: .5px;
 }
 
 h1 {
     font-weight: 900;
     font-size: 55px;
-    line-height: 100px;
+    line-height: 62px;
     color: #000000;
+    @include media(768px){
+        line-height: 90px;
+    }
 }
 
 span {
@@ -32,7 +38,7 @@ p {
 
 .title {
     font-weight: 900;
-    font-size: 30px;
+    font-size: 38px;
     line-height: 62px;
     color: #000000;
 }

@@ -1,0 +1,55 @@
+.social{
+    margin-top: 70px;
+    overflow: hidden;
+    @include media(768px){
+        margin-top: 97px;
+        overflow: visible;
+    }
+}
+.soc{
+    margin-top: 20px;
+}
+.soc:last-child{
+    background-image: url(/img/social-img1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.social__item,.soc{
+    height: 250px;
+    width: 100%;
+    box-shadow: 0px 0px 30px rgb(146 146 146 / 20%);
+    background-image: url(/img/social-img5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    // background: #1D4350;  
+    // background: -webkit-linear-gradient(to right, #A43931, #1D4350); 
+    // background: linear-gradient(to right, #A43931, #1D4350); 
+
+    border-radius: 6px;
+}
+.social__title{
+    position: relative;
+    &::after{
+        content: '';
+        background-image: url(/img/insta-icon.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        display: block;
+        width: 100px;
+        height: 100px;
+        top: 77px;
+        left: -10px;
+        @include media(992px){
+            top: -20px;
+            left: 340px;
+        }
+    }
+    h3{
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 62px;
+    }
+}
+.social_img-wooman{
+    width: 710px;
+}
